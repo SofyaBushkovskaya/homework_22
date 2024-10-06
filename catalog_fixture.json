@@ -1,0 +1,57 @@
+[
+{
+    "model": "catalog.category",
+    "pk": 3,
+    "fields": {
+        "name": "Телефоны",
+        "description": "Смартфоны"
+    }
+},
+{
+    "model": "catalog.category",
+    "pk": 4,
+    "fields": {
+        "name": "Электроника",
+        "description": "Бытовая электроника"
+    }
+},
+{
+    "model": "catalog.product",
+    "pk": 15,
+    "fields": {
+        "name": "Iphone 11",
+        "description": "Смартфон Apple",
+        "image": "",
+        "category": 3,
+        "price": 50000,
+        "created_at": "2024-10-05",
+        "updated_at": "2024-10-05"
+    }
+},
+{
+    "model": "catalog.product",
+    "pk": 17,
+    "fields": {
+        "name": "Machenike L17",
+        "description": "Ноутбук Machenike",
+        "image": "",
+        "category": 4,
+        "price": 100000,
+        "created_at": "2024-10-05",
+        "updated_at": "2024-10-05"
+    }
+},
+{
+    "model": "catalog.product",
+    "pk": 18,
+    "fields": {
+        "name": "Msi Katana B17V",
+        "description": "Ноутбук Msi",
+        "image": "",
+        "category": 4,
+        "price": 105000,
+        "created_at": "2024-10-05",
+        "updated_at": "2024-10-05"
+    }
+}
+]
