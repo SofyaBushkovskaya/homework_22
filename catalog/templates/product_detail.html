@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load my_tags %}
+{% block content %}
+<div class="container">
+    <div class="row text-center">
+        <div class="row text-center mb-4">
+        <div class="card" style="width: 18rem;">
+            <div class="card-header">
+                <img src="{{ product.image | media_filter }}" class="card-img-top" alt="product">
+                <h4 class="my-0 font-weight-normal">{{ product.name }}</h4>
+            </div>
+            <div class="card-body">
+                <h1 class="card_text">{{ product.price }}</h1>
+                <p class="card_text">{{ product.description|truncatechars:100 }}</p>
+                <a href="{% url 'catalog:product_list' %}" class="btn btn-secondary">Вернуться к списку товаров</a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}
