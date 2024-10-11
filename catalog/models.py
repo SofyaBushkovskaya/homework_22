@@ -17,6 +17,7 @@ class Category(models.Model):
 
 
 class Product(models.Model):
+    objects = None
     name = models.CharField(
         max_length=150, verbose_name="Название", help_text="Введите название"
     )
@@ -28,8 +29,6 @@ class Product(models.Model):
     )
     image = models.ImageField(
         upload_to="catalog/photo",
-        blank=True,
-        null=True,
         verbose_name="Изображение",
         help_text="Добавьте изображение продукта",
     )
