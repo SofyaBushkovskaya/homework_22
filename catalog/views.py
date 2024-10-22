@@ -6,6 +6,7 @@ from django.views.generic import ListView, DetailView, CreateView, UpdateView, D
 from django.http import HttpResponse
 from django.shortcuts import render
 
+from catalog.forms import ProductForm
 from catalog.models import Product
 
 
@@ -40,13 +41,15 @@ class ProductDetailView(DetailView):
 
 class ProductCreateView(CreateView):
     model = Product
-    fields = ("name", "description", "image", "category", "price")
+    form_class = ProductForm
+    template_name = "catalog/product_form.html"
     success_url = reverse_lazy("catalog:product_list")
 
 
 class ProductUpdateView(UpdateView):
     model = Product
-    fields = ("name", "description", "image", "category", "price")
+    form_class = ProductForm
+    template_name = "catalog/product_form.html"
     success_url = reverse_lazy("catalog:product_list")
 
 
