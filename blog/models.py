@@ -24,7 +24,7 @@ class Blog(models.Model):
     )
 
     sign_publication = models.BooleanField(
-        default=True
+        default=True,
     )
 
     view_count = models.PositiveIntegerField(
