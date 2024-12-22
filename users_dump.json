@@ -1,10 +1,9 @@
 [
   {
     "model": "users.user",
-    "pk": 2,
     "fields": {
       "password": "pbkdf2_sha256$600000$Ntg7VSto6J1h8QoguPbuLr$9fgJZqk8kC4bhQ2wF80z75uyrPJgdihsrGTi+cMXt9o=",
-      "last_login": "2024-12-18T14:33:38.842Z",
+      "last_login": "2024-12-22T10:52:53.331Z",
       "is_superuser": true,
       "first_name": "",
       "last_name": "",
@@ -22,7 +21,6 @@
   },
   {
     "model": "users.user",
-    "pk": 7,
     "fields": {
       "password": "pbkdf2_sha256$600000$DTLk3YMHN19FXU46uGmUbE$916tneK7J3ptHNym3f5Pa56VGlK5hyVbMbGK0zEr27Y=",
       "last_login": "2024-12-18T14:34:29.467Z",
@@ -38,17 +36,26 @@
       "phone": null,
       "country": null,
       "groups": [
-        1
+        [
+          "moderators"
+        ]
       ],
       "user_permissions": [
-        37,
-        27
+        [
+          "can_unpublish_product",
+          "catalog",
+          "product"
+        ],
+        [
+          "delete_product",
+          "catalog",
+          "product"
+        ]
       ]
     }
   },
   {
     "model": "users.user",
-    "pk": 8,
     "fields": {
       "password": "pbkdf2_sha256$600000$DzQIR3YVtRqldYFCcJYTB4$GnutLmaf++dyNvHOTqJ9lkAeJa2+reDXL+b7lUqpyUQ=",
       "last_login": "2024-12-18T14:34:16.241Z",
